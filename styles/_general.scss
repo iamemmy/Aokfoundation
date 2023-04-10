@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+// General
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    // outline: 1px solid yellow;
+}
+
+//Variable
+$colors:(
+    color01: #000000,
+    color02: #FFFFFF,
+    color03: #00154c,
+    color04: #12376e,
+    color05: #4F7CB3,
+    color06: #EF7425,
+    color07: #42A83D,
+    color08: #b94d0a,
+    color09: #525252,
+);
+
+// Function
+@function getColor($key){
+    @return map-get($colors, $key);
+}
+
+// Mixin
+@mixin mobile{
+    @media (max-width: 690.9px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media (max-width: 990.9px){
+        @content;
+    }
+}
+@mixin tablet02{
+    @media (max-width: 860.9px){
+        @content;
+    }
+}
