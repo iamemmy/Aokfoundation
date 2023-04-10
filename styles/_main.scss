@@ -1002,18 +1002,21 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding-top: 40px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../media/kids--4.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @include mobile {
-            min-height: 70vh;
+            min-height: 60vh;
         }
         h2 {
             font-size: 40px;
             color: getColor(color02);
             text-align: center;
+            @include mobile {
+                font-size: 30px;
+            }
         }
     }
 }

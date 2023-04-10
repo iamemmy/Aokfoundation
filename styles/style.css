@@ -1112,7 +1112,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding-top: 40px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/kids--4.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1120,13 +1120,18 @@
 }
 @media (max-width: 690.9px) {
   #header-blog .blog-hero {
-    min-height: 70vh;
+    min-height: 60vh;
   }
 }
 #header-blog .blog-hero h2 {
   font-size: 40px;
   color: #FFFFFF;
   text-align: center;
+}
+@media (max-width: 690.9px) {
+  #header-blog .blog-hero h2 {
+    font-size: 30px;
+  }
 }
 
 #blog-container {
